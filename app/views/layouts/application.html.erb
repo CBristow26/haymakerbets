@@ -7,8 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<!-- Beginning Of Navigation Bar -->
+			<header id="header" class="alt">
+				<h1><strong><a href="index.html">HaymakerBets</a></strong>.com</h1>
+				<nav id="nav">
+					<ul>
+						<li><%= link_to "HOME", root_path %></li>
 
+						<li><%= link_to "SPORT PICKS", welcome_sportpicks_path %></li>
+
+
+						<li><%= link_to "FANTASTY LINEUPS", welcome_fantasty_path %></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+<!-- End Of Navigation Bar-->
 <%= yield %>
-
 </body>
 </html>
