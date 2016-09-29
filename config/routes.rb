@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'welcome/index'
 
   get 'welcome/sportpicks'
@@ -64,4 +65,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   root 'places#index'
+  
 end
