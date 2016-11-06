@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <!-- Beginning Of Navigation Bar -->
 			<header id="header" class="alt">
 				<h1><strong><a href="index.html">HaymakerBets</a></strong>.com</h1>
@@ -18,9 +19,7 @@
 
 
 						<li><%= link_to "Software Name", welcome_subscription_path %></li>
-
-
-
+						
 
 						      <% if user_signed_in? %>
         <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>

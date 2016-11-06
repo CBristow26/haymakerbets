@@ -15,5 +15,5 @@ class WelcomeController < ApplicationController
   end
 
   def subscription
-  end
+  end 
 end

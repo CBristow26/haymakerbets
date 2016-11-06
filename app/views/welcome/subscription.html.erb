@@ -12,3 +12,9 @@
 <div class="topmenu">
 </br></br></br>
 </div>
+
+<%= simple_form_for @Subscriber do |f| %>
+  <%= f.input :username %>
+  <%= f.input :password %>
+  <%= f.button :submit %>
+<% end %>
